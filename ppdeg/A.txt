@@ -1,0 +1,6 @@
+a ideia aqui é testar a função degrau de perceptrons
+usando a fórmula:
+y={
+    1, caso x >= 0
+    0, caso x < 0
+}
