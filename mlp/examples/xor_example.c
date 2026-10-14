@@ -1,11 +1,11 @@
 /*
 
-title: NNeural-MLP
+title: NNeural-MLP--XOR-example
 
 auth: Caio A. Nog
 date: 10/14/2026
 
-file: ex2.c
+file: xor_example.c
 
 */
 #include <stdio.h>
@@ -18,11 +18,11 @@ int main(void)
 {
     size_t layers[] = {2, 3, 1};
 
-    float inputs[4][2] = {
-        {0.0f, 0.0f},
-        {0.0f, 1.0f},
-        {1.0f, 0.0f},
-        {1.0f, 1.0f}
+    float inputs[4][2] = { //entradas
+        {0.0f, 0.0f},//ambas marcando 0
+        {0.0f, 1.0f},//a 2 entrada marcando 1
+        {1.0f, 0.0f},//a 1 entrada marcando 1
+        {1.0f, 1.0f}//ambas marcando 1
     };
 
     float targets[4][1] = {
@@ -30,7 +30,7 @@ int main(void)
         {1.0f},
         {1.0f},
         {0.0f}
-    };
+    }; //porta logica XOR, n tem segredo
 
     srand((unsigned int)time(NULL));
 
@@ -42,12 +42,13 @@ int main(void)
     }
 
     /* Treinamento */
-    size_t epochs = 50000;
+    size_t epochs = 50000; //treina 50.000 vezes
     float learning_rate = 0.5f;
     size_t epoch, i;
 
     for (epoch = 0; epoch < epochs; ++epoch) {
         for (i = 0; i < 4; ++i) {
+            //treina com os valores de entrada e resultados, pré definidos
             if (!mlp_train(
                     net,
                     inputs[i],
