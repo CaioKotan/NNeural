@@ -1,0 +1,3 @@
+objetivo dos códigos disponibilizados aqui é dissecar
+o tipo mais simples de modelo de linguagem, anterior aos LLMs
+no caso o NLP.

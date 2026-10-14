@@ -14,9 +14,13 @@ file: xor_example.c
 
 #include "../mlp.h"
 
-int main(void)
-{
-    size_t layers[] = {2, 3, 1};
+int main(void){
+
+    /*
+    uma camada oculta -> problemas lineares (1 perceptron ja daria conta)
+    a partir de duas camadas problemas não lineares podem ser resolvidos
+    */
+    size_t layers[] = {2, 2, 1};
 
     float inputs[4][2] = { //entradas
         {0.0f, 0.0f},//ambas marcando 0
