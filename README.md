@@ -1,5 +1,6 @@
 <h1>NNeural</h1>
 <img align="center" src="a.jpg" width=800px/>
+<img align="center" src="b.png" width=800px/>
 <p>artificial neurons, simplified in C</p>
 
 <h2>Overview</h2>
