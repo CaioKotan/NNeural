@@ -5,7 +5,7 @@ title: NNeural-Perceptron
 auth: Caio A. Nog
 date: 10/14/2026
 
-file: ex1.c
+file: ./ppdeg/examples/ex1.c
 
 */
 #include <stdio.h>
